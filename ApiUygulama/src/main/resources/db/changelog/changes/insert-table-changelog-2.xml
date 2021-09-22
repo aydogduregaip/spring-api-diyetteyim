@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="admin" id="2">
+        <insert tableName="roles">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="ROLE_USER"/>
+        </insert>
+        <insert tableName="roles">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="ROLE_MODERATOR"/>
+        </insert>
+        <insert tableName="roles">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="ROLE_ADMIN"/>
+        </insert>
+
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="KAHVALTILIK_GEVREK"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="KAHVALTILIK_EZME"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="KAHVALTILIK_SEBZE"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="ATISTIRMALIK"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="ICECEK"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="6"/>
+            <column name="name" value="TATLI"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="7"/>
+            <column name="name" value="MEYVE"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="8"/>
+            <column name="name" value="ANAYEMEK"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="9"/>
+            <column name="name" value="SALATA"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="10"/>
+            <column name="name" value="CORBA"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="11"/>
+            <column name="name" value="PEYNIR"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="12"/>
+            <column name="name" value="ZEYTIN"/>
+        </insert>
+        <insert tableName="foodcategory">
+            <column name="id" valueNumeric="13"/>
+            <column name="name" value="EKMEK"/>
+        </insert>
+
+        <insert tableName="foodtype">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="KAHVALTI"/>
+        </insert>
+        <insert tableName="foodtype">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="OGLE_YEMEGI"/>
+        </insert>
+        <insert tableName="foodtype">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="AKSAM_YEMEGI"/>
+        </insert>
+        <insert tableName="foodtype">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="GENEL"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
